@@ -31,7 +31,8 @@ public class BaseTest {
     @BeforeMethod
     public void setup() {
 //        System.setProperty("webdriver.edge.driver", "C:\\WebDrivers\\msedgedriver.exe"); // Set the correct path
-        driver = new EdgeDriver();
+//        driver = new EdgeDriver();
+        driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
         loadProperties();
         driver.get(properties.getProperty("URL"));
