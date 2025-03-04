@@ -3,7 +3,7 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="C:/Users/SahilSubba/eclipse-workspace/PursuitSoftwareEdge">
         <classes>
-            <class name="AboutUsTest"/>
+            <class name="Test.AboutUsTest"/>
             <!--  <class name="Test1.testing1.BlogsAndInsightsTest"/>
              <class name="Test1.testing1.CareerTabTest"/>
              <class name="Test1.testing1.ContactUsTabTest"/>
