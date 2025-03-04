@@ -30,11 +30,16 @@ public class BaseTest {
 
     @BeforeMethod
     public void setup() {
-        driver = new EdgeDriver();
-//        driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+//        driver = new EdgeDriver();
+////        driver = new ChromeDriver();
+//        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
         loadProperties();
-        driver.get(properties.getProperty("URL"));
+//        driver.get(properties.getProperty("URL"));
+//        driver.manage().window().maximize();
+//        wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+
+        driver = new EdgeDriver();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
         driver.manage().window().maximize();
         wait = new WebDriverWait(driver, Duration.ofSeconds(30));
     }
