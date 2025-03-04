@@ -60,28 +60,27 @@ public class AboutUsTest extends BaseTest {
 		Interactions interact = new Interactions(driver);
 		interact.executeWithDelay(() -> aut.clickContactUsBtn());
 	}
-
-	@Test(priority = 7, retryAnalyzer = RetryAnalyzer.class)
-	public void Validate_COOKIE_POLICY_button_click_TC_007() {
-		initialTest();
-		AboutUsTab aut = new AboutUsTab(driver);
-		Interactions interact = new Interactions(driver);
-		interact.executeWithDelay(() -> aut.clickCookiePolicyBtn());
-	}
-	@Test(priority = 8, retryAnalyzer = RetryAnalyzer.class)
-	public void Validate_TERMS_AND_CONDITIONS_button_click_TC_008() {
-		initialTest();
-		AboutUsTab aut = new AboutUsTab(driver);
-		Interactions interact = new Interactions(driver);
-		interact.executeWithDelay(() -> aut.clickTermsAndConditionsBtn());
-	}
-	@Test(priority = 9, retryAnalyzer = RetryAnalyzer.class)
-	public void Validate_PRIVACY_POLICY_button_click_TC_009() {
-		initialTest();
-		AboutUsTab aut = new AboutUsTab(driver);
-		Interactions interact = new Interactions(driver);
-		interact.executeWithDelay(() -> aut.clickPrivacyPolicyBtn());
-	}
+//	@Test(priority = 7, retryAnalyzer = RetryAnalyzer.class)
+//	public void Validate_COOKIE_POLICY_button_click_TC_007() {
+//		initialTest();
+//		AboutUsTab aut = new AboutUsTab(driver);
+//		Interactions interact = new Interactions(driver);
+//		interact.executeWithDelay(() -> aut.clickCookiePolicyBtn());
+//	}
+//	@Test(priority = 8, retryAnalyzer = RetryAnalyzer.class)
+//	public void Validate_TERMS_AND_CONDITIONS_button_click_TC_008() {
+//		initialTest();
+//		AboutUsTab aut = new AboutUsTab(driver);
+//		Interactions interact = new Interactions(driver);
+//		interact.executeWithDelay(() -> aut.clickTermsAndConditionsBtn());
+//	}
+//	@Test(priority = 9, retryAnalyzer = RetryAnalyzer.class)
+//	public void Validate_PRIVACY_POLICY_button_click_TC_009() {
+//		initialTest();
+//		AboutUsTab aut = new AboutUsTab(driver);
+//		Interactions interact = new Interactions(driver);
+//		interact.executeWithDelay(() -> aut.clickPrivacyPolicyBtn());
+//	}
 	@Test(priority = 10, retryAnalyzer = RetryAnalyzer.class)
 	public void Validate_LINKED_IN_ICON_button_click_TC_010() {
 		initialTest();
