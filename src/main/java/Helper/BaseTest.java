@@ -32,8 +32,9 @@ public class BaseTest {
 //        System.setProperty("webdriver.edge.driver", "C:\\WebDrivers\\msedgedriver.exe"); // Set the correct path
         driver = new EdgeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-        driver.manage().window().maximize();
+        loadProperties();
         driver.get(properties.getProperty("URL"));
+        driver.manage().window().maximize();
         wait = new WebDriverWait(driver, Duration.ofSeconds(30));
     }
 
