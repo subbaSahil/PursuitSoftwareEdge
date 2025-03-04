@@ -33,6 +33,7 @@ public class BaseTest {
         driver = new EdgeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
         driver.manage().window().maximize();
+        driver.get(properties.getProperty("URL"));
         wait = new WebDriverWait(driver, Duration.ofSeconds(30));
     }
 
